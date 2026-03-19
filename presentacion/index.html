@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Guanábanos — Acabados Recomendados</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --cream: #F5F0E8;
+    --sand: #E8DFD0;
+    --stone: #C4B9A8;
+    --bronze: #8B7355;
+    --bronze-dark: #6B5740;
+    --charcoal: #2C2520;
+    --warm-white: #FAF7F2;
+    --accent: #A69070;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--charcoal);
+    color: var(--charcoal);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .slide {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+  }
+  .slide.active { display: flex; }
+
+  /* Title Slide */
+  .slide-title {
+    background: var(--charcoal);
+    color: var(--cream);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+  }
+  .slide-title h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+  }
+  .slide-title .subtitle {
+    font-weight: 300;
+    font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+    color: var(--stone);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+  }
+  .slide-title .meta {
+    font-size: 0.85rem;
+    color: var(--bronze);
+    line-height: 1.8;
+  }
+  .slide-title .divider {
+    width: 80px;
+    height: 1px;
+    background: var(--bronze);
+    margin: 2em auto;
+  }
+
+  /* Content Slides */
+  .slide-content {
+    flex-direction: row;
+    background: var(--warm-white);
+  }
+
+  .slide-image {
+    width: 45%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slide-image .image-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(44,37,32,0.75);
+    color: var(--cream);
+    padding: 8px 16px;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
+  }
+
+  .slide-info {
+    width: 55%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 3.5% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .slide-info .category-tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--bronze);
+    margin-bottom: 0.5em;
+    font-weight: 500;
+  }
+  .slide-info h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+    color: var(--charcoal);
+    margin-bottom: 0.6em;
+    line-height: 1.15;
+  }
+  .slide-info .description {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: #5C5147;
+    margin-bottom: 1.5em;
+    max-width: 520px;
+  }
+
+  .product-card {
+    background: white;
+    border: 1px solid var(--sand);
+    padding: 1.2em 1.5em;
+    margin-bottom: 0.8em;
+    border-left: 3px solid var(--bronze);
+  }
+  .product-card.recommended {
+    border-left: 3px solid #7A8B55;
+    background: #FAFDF5;
+  }
+  .product-card .product-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--bronze);
+    margin-bottom: 0.4em;
+    font-weight: 600;
+  }
+  .product-card.recommended .product-label {
+    color: #7A8B55;
+  }
+  .product-card .product-label::after {
+    content: '';
+  }
+  .product-card.recommended .product-label::after {
+    content: ' ★ RECOMENDADO';
+  }
+  .product-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--charcoal);
+    margin-bottom: 0.3em;
+  }
+  .product-card .product-desc {
+    font-size: 0.78rem;
+    color: #6B6155;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+  }
+  .product-card .price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bronze-dark);
+  }
+  .product-card .price-usd {
+    font-size: 0.75rem;
+    color: var(--stone);
+    font-weight: 400;
+    margin-left: 0.5em;
+  }
+
+  .total-bar {
+    margin-top: 1em;
+    padding: 1em 1.5em;
+    background: var(--charcoal);
+    color: var(--cream);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .total-bar .total-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .total-bar .total-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  /* Navigation */
+  .nav {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    display: flex;
+    gap: 8px;
+    z-index: 100;
+  }
+  .nav button {
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--stone);
+    background: rgba(44,37,32,0.85);
+    color: var(--cream);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav button:hover { background: var(--bronze); border-color: var(--bronze); }
+
+  .slide-counter {
+    position: fixed;
+    bottom: 38px;
+    left: 40px;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--stone);
+    z-index: 100;
+    background: rgba(44,37,32,0.75);
+    padding: 6px 14px;
+    backdrop-filter: blur(10px);
+  }
+
+  /* Summary Slide */
+  .slide-summary {
+    background: var(--charcoal);
+    color: var(--cream);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 8%;
+  }
+  .slide-summary h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255,255,255,0.1);
+  }
+  .summary-cell {
+    padding: 1em 1.2em;
+    background: var(--charcoal);
+    text-align: center;
+  }
+  .summary-cell.header {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--stone);
+    padding-bottom: 0.8em;
+  }
+  .summary-cell .sum-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 0.3em;
+  }
+  .summary-cell .sum-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  .summary-cell.highlight {
+    background: rgba(122,139,85,0.15);
+  }
+  .summary-cell.highlight .sum-value {
+    color: #B8CC88;
+    font-size: 1.5rem;
+  }
+  .summary-note {
+    margin-top: 2em;
+    font-size: 0.8rem;
+    color: var(--stone);
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.7;
+  }
+
+  /* Double image layout */
+  .slide-image.double {
+    display: flex;
+    flex-direction: column;
+  }
+  .slide-image.double img {
+    height: 50%;
+  }
+
+  /* Scrollbar */
+  .slide-info::-webkit-scrollbar { width: 4px; }
+  .slide-info::-webkit-scrollbar-track { background: transparent; }
+  .slide-info::-webkit-scrollbar-thumb { background: var(--sand); border-radius: 2px; }
+
+  .two-images {
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .two-images img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 0: Title -->
+<div class="slide slide-title active" id="s0">
+  <h1>CASA GUANÁBANOS</h1>
+  <div class="subtitle">Acabados Recomendados</div>
+  <div class="divider"></div>
+  <div class="meta">
+    Arquitecto: Artigas Arquitectos<br>
+    Estilo: Hacienda Contemporánea Mexicana<br>
+    Cuajimalpa, CDMX<br><br>
+    Estrategia: Opción A base + Opción B en elementos clave<br>
+    <strong>Presupuesto estimado: $8.5M – $11.5M MXN</strong>
+  </div>
+</div>
+
+<!-- SLIDE 1: Pisos Sociales -->
+<div class="slide slide-content" id="s1">
+  <div class="slide-image">
+    <img src="img/corredor-cantera.png" alt="Corredor con piso de mármol crema">
+    <div class="image-label">Referencia de estilo — Piso mármol crema</div>
+  </div>
+  <div class="slide-info">
+    <div class="category-tag">01 — Pisos</div>
+    <h2>Áreas Sociales PB + Circulaciones</h2>
+    <p class="description">
+      ~180 m². Mármol o caliza crema, formato grande, acabado apomazado. Continuidad interior-exterior. 
+      El tono cálido que se ve en todas las fotos de referencia.
+    </p>
+    <div class="product-card">
+      <div class="product-label">Opción A</div>
+      <h4>Crema Maya — Mármol Mexicano</h4>
+      <div class="product-desc">Mármol de Yucatán, 60×60cm, apomazado. La versión mexicana del Crema Marfil.</div>
+      <div class="price">$324,000 – $504,000 <span class="price-usd">($18,500 – $28,800 USD)</span></div>
+    </div>
+    <div class="product-card recommended">
+      <div class="product-label">Opción B</div>
+      <h4>Crema Marfil o Botticino</h4>
+      <div class="product-desc">Mármol español o italiano, 80×80 o 60×120cm, apomazado. Probablemente lo que se ve en las fotos de referencia.</div>
+      <div class="price">$630,000 – $990,000 <span class="price-usd">($36,000 – $56,600 USD)</span></div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">Opción C</div>
+      <h4>Pietra di Vicenza / Crema d'Orcia</h4>
+      <div class="product-desc">Piedra caliza italiana, formatos grandes. Máximo refinamiento.</div>
+      <div class="price">$1,440,000 – $2,520,000 <span class="price-usd">($82,300 – $144,000 USD)</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 2: Pisos Recámaras -->
+<div class="slide slide-content" id="s2">
+  <div class="slide-image">
+    <img src="img/sala-estar.png" alt="Sala con pisos crema y muebles de madera">
+    <div class="image-label">Referencia — Continuidad de mármol crema</div>
+  </div>
+  <div class="slide-info">
+    <div class="category-tag">02 — Pisos</div>
+    <h2>Recámaras + Cine + Garage + Terraza</h2>
+    <p class="description">~340 m² en total. Recámaras con opción de madera de parota para diferenciar espacios privados.
+      Cine, garage y terraza con materiales apropiados a cada uso.</p>
+    <div class="product-card recommended">
+      <div class="product-label">Recámaras ~80 m²</div>
+      <h4>Duela de Parota — acabado natural aceitado</h4>
+      <div class="product-desc">Tablón ancho de parota michoacana. Calidez contra el mármol. Contraste perfecto con el lenguaje de la casa.</div>
+      <div class="price">$240,000 – $360,000 <span class="price-usd">($13,700 – $20,600 USD)</span></div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">Cine / Zona de Juegos ~120 m²</div>
+      <h4>Duela de Ingeniería de Roble</h4>
+      <div class="product-desc">Tono medio, resistente y cálido para los espacios del sótano.</div>
+      <div class="price">$240,000 – $420,000 <span class="price-usd">($13,700 – $24,000 USD)</span></div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">Garage ~60 m² + Terraza ~80 m²</div>
+      <h4>Porcelánico + Cantera/Deck</h4>
+      <div class="product-desc">Garage: porcelánico técnico. Terraza: cantera + deck de madera.</div>
+      <div class="price">$296,000 – $468,000 <span class="price-usd">($16,900 – $26,700 USD)</span></div>
+    </div>
+    <div class="total-bar">
+      <span class="total-label">Total Pisos Todos Los Niveles</span>
+      <span class="total-price">$1,430,000 – $2,238,000</span>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 3: Escaleras -->
+<div class="slide slide-content" id="s3">
+  <div class="slide-image">
+    <img src="img/escalera-led.png" alt="Escalera de mármol con LED">
+    <div class="image-label">Referencia exacta — Escalera mármol + LED + cristal</div>
+  </div>
+  <div class="slide-info">
+    <div class="category-tag">03 — Escaleras</div>
+    <h2>Mármol Crema + LED + Barandal Negro</h2>
+    <p class="description">
+      ~5 tramos entre todos los niveles. Las fotos de referencia definen perfectamente este elemento: 
+      mármol crema con iluminación LED cálida debajo de cada huella, barandal de acero negro + cristal templado.
+    </p>
+    <div class="product-card recommended">
+      <div class="product-label">Opción B</div>
+      <h4>Crema Marfil + Häfele Loox 2700K + Acero negro / vidrio laminado</h4>
+      <div class="product-desc">
+        Escalón: Crema Marfil con nariz pulida y canto boleado<br>
+        LED: Häfele Loox regulable 2700K bajo cada huella<br>
+        Barandal: Acero negro mate + vidrio laminado 10+10mm
+      </div>
+      <div class="price">$700,000 – $1,100,000 <span class="price-usd">($40,000 – $62,900 USD)</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 4: Muros Cantera -->
+<div class="slide slide-content" id="s4">
+  <div class="two-images">
+    <img src="img/cantera-detalle.png" alt="Detalle de muro de cantera">
+    <img src="img/pasillo-luminaria.png" alt="Pasillo con cantera y luminaria">
+  </div>
+  <div class="slide-info">
+    <div class="category-tag">04 — Muros</div>
+    <h2>Cantera Labrada + Estuco Cal</h2>
+    <p class="description">
+      La cantera es EL material protagonista. Bloques grandes, tono crema/arena, textura cincelada o martelinada.
+      Los muros secundarios llevan aplanado fino o estuco veneciano en tono cálido — nunca blanco frío.
+    </p>
+    <div class="product-card recommended">
+      <div class="product-label">Cantera ~120 m²</div>
+      <h4>Cantera de San Luis Potosí — cincelada artesanal</h4>
+      <div class="product-desc">Formato mixto, acabado cincelado — la textura exacta de las fotos de referencia. Instalada por canteros especializados.</div>
+      <div class="price">$336,000 – $540,000 <span class="price-usd">($19,200 – $30,900 USD)</span></div>
+    </div>
+    <div class="product-card recommended">
+      <div class="product-label">Estuco / Aplanado ~300 m²</div>
+      <h4>Estuco Veneciano (Marmorino) — tono arena</h4>
+      <div class="product-desc">Novacolor Marmorino KS u Oikos. La textura suave y ligeramente luminosa que se ve en las fotos.</div>
+      <div class="price">$240,000 – $450,000 <span class="price-usd">($13,700 – $25,700 USD)</span></div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">Muros acento madera ~40 m²</div>
+      <h4>Parota/teca acabado grey-wash</h4>
+      <div class="product-desc">Tablones verticales como en el vestíbulo de referencia.</div>
+      <div class="price">$160,000 – $260,000 <span class="price-usd">($9,100 – $14,900 USD)</span></div>
+    </div>
+    <div class="total-bar">
+      <span class="total-label">Total Muros</span>
+      <span class="total-price">$736,000 – $1,250,000</span>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 5: Plafones -->
+<div class="slide slide-content" id="s5">
+  <div class="two-images">
+    <img src="img/cocina-celosia.png" alt="Celosía de madera en cocina">
+    <img src="img/plafon-duelas.png" alt="Plafón de duelas con LED">
+  </div>
+  <div class="slide-info">
+    <div class="category-tag">05 — Plafones</div>
+    <h2>Celosía + Vigas Blanqueadas + Duelas LED</h2>
+    <p class="description">
+      El elemento que MÁS define este estilo. Tres tratamientos artesanales que transforman los espacios.
+      La celosía de la cocina es el showstopper de la casa.
+    </p>
+    <div class="product-card recommended">
+      <div class="product-label">Celosía Cocina/Comedor ~50 m²</div>
+      <h4>Parota — celosía artesanal + vigas macizas</h4>
+      <div class="product-desc">Lattice de madera con vigas expuestas, acabado natural aceitado tono miel. Carpintería artesanal de alto nivel — no existe prefabricada. Requiere maestro carpintero especializado.</div>
+      <div class="price">$400,000 – $700,000 <span class="price-usd">($22,900 – $40,000 USD)</span></div>
+    </div>
+    <div class="product-card recommended">
+      <div class="product-label">Vigas blanqueadas Sala/Family ~60 m²</div>
+      <h4>Parota + cedro — acabado grey-wash</h4>
+      <div class="product-desc">Vigas de parota + entablado de cedro. Acabado blanqueado artesanal con wash de cal.</div>
+      <div class="price">$350,000 – $600,000 <span class="price-usd">($20,000 – $34,300 USD)</span></div>
+    </div>
+    <div class="product-card recommended">
+      <div class="product-label">Duelas + LED Circulaciones ~40 m²</div>
+      <h4>Parota maciza + Häfele Loox entre listones</h4>
+      <div class="product-desc">Listones paralelos con LED retroiluminado. Exactamente lo de las fotos de referencia.</div>
+      <div class="price">$250,000 – $450,000 <span class="price-usd">($14,300 – $25,700 USD)</span></div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">Simple Recámaras/Baños ~150 m²</div>
+      <h4>Tablaroca + canal LED + acentos madera</h4>
+      <div class="price">$120,000 – $200,000</div>
+    </div>
+    <div class="total-bar">
+      <span class="total-label">Total Plafones</span>
+      <span class="total-price">$1,120,000 – $1,950,000</span>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 6: Cocina -->
+<div class="slide slide-content" id="s6">
+  <div class="two-images">
+    <img src="img/cocina-aparador.png" alt="Aparador artesanal de cocina">
+    <img src="img/cocina-isla.png" alt="Isla de cocina con piedra">
+  </div>
+  <div class="slide-info">
+    <div class="category-tag">06 — Cocina</div>
+    <h2>Carpintería Artesanal + Piedra + Wolf</h2>
+    <p class="description">
+      No es SieMatic ni Bulthaup. Es carpintería artesanal mexicana de altísimo nivel — 
+      un aparador monumental de parota/teca, isla de piedra en cascada, estufa profesional.
+      Cocina de hacienda contemporánea.
+    </p>
+    <div class="product-card recommended">
+      <div class="product-label">Gabinetes + Aparador</div>
+      <h4>Teca reciclada — puertas de vidrio soplado + herrajes hierro forjado</h4>
+      <div class="product-desc">El aparador monumental con panaderas de vidrio curvo (como en las fotos). Carpintería master artesanal.</div>
+      <div class="price">$600,000 – $1,000,000 <span class="price-usd">($34,300 – $57,100 USD)</span></div>
+    </div>
+    <div class="product-card recommended">
+      <div class="product-label">Isla Waterfall</div>
+      <h4>Crema Marfil o Botticino — borde 6cm, cascada</h4>
+      <div class="product-desc">Cubierta gruesa de mármol con caída en cascada, como en la referencia.</div>
+      <div class="price">$120,000 – $200,000 <span class="price-usd">($6,900 – $11,400 USD)</span></div>
+    </div>
+    <div class="product-card recommended">
+      <div class="product-label">Electrodomésticos</div>
+      <h4>Wolf Range 36" + Sub-Zero + Miele + EuroCave</h4>
+      <div class="product-desc">Range: Wolf 36" Dual Fuel. Refrigerador: Sub-Zero columna integrada. Lavavajillas: Miele G7000. Cava: Sub-Zero.</div>
+      <div class="price">$380,000 – $550,000 <span class="price-usd">($21,700 – $31,400 USD)</span></div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">Cubierta perimetral + Tarja + Grifería</div>
+      <h4>Mármol crema + Waterstone Traditional bronce</h4>
+      <div class="price">$110,000 – $185,000</div>
+    </div>
+    <div class="total-bar">
+      <span class="total-label">Total Cocina</span>
+      <span class="total-price">$1,210,000 – $1,935,000</span>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 7: Baños -->
+<div class="slide slide-content" id="s7">
+  <div class="slide-image">
+    <img src="img/vestibulo-madera.png" alt="Vestíbulo con madera y mármol">
+    <div class="image-label">Misma paleta — piedra crema + madera + bronce</div>
+  </div>
+  <div class="slide-info">
+    <div class="category-tag">07 — Baños</div>
+    <h2>Piedra Natural + Parota + Bronce</h2>
+    <p class="description">
+      Baño master como showcase. Piedra tallada artesanal, mueble de parota, grifería en bronce antiguo.
+      El mismo lenguaje de toda la casa.
+    </p>
+    <div class="product-card recommended">
+      <div class="product-label">Baño Master — Opción B</div>
+      <h4>Toto Neorest + Agape + Teca artesanal + Hansgrohe Axor bronce</h4>
+      <div class="product-desc">
+        WC: Toto Neorest NX1 ($55K) · Lavabos: artesanal cantera/mármol ($50K) · 
+        Mueble: teca reciclada c/ herrajes bronce ($70K) · Regadera: Axor Montreux ($55K) · 
+        Grifería: Waterstone bronce ($40K) · Tina: piedra tallada ($80K) · 
+        Recubrimiento: tadelakt + mármol ($110K) · Espejo + accesorios: ($50K)
+      </div>
+      <div class="price">$510,000 <span class="price-usd">($29,100 USD)</span></div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">2 Baños Secundarios PA</div>
+      <h4>Mismo lenguaje, escala menor</h4>
+      <div class="price">$460,000 <span class="price-usd">($26,300 USD)</span></div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">Medio Baño PB — Statement</div>
+      <h4>Tadelakt + lavabo monolítico de cantera + espejo antiguo</h4>
+      <div class="price">$120,000 <span class="price-usd">($6,900 USD)</span></div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">2 Baños Servicio/S1</div>
+      <div class="price">$130,000</div>
+    </div>
+    <div class="total-bar">
+      <span class="total-label">Total Baños</span>
+      <span class="total-price">$1,220,000</span>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 8: Puertas -->
+<div class="slide slide-content" id="s8">
+  <div class="two-images">
+    <img src="img/puerta-detalle.png" alt="Detalle de puerta grey-wash">
+    <img src="img/vestibulo-madera.png" alt="Pared de madera monumental">
+  </div>
+  <div class="slide-info">
+    <div class="category-tag">08 — Puertas</div>
+    <h2>Madera Artesanal + Grey-wash + Louvers</h2>
+    <p class="description">
+      Las fotos definen puertas de piso a techo en madera grey-wash, marcos ocultos, y elementos de louver/persiana.
+      La puerta principal debe ser un gesto monumental — pivotante de parota.
+    </p>
+    <div class="product-card recommended">
+      <div class="product-label">Puerta Principal</div>
+      <h4>Pivotante de parota con louvers + FritsJurgens</h4>
+      <div class="product-desc">2.40m+, parota maciza con panel de louvers integrado. Sistema pivotante FritsJurgens oculto.</div>
+      <div class="price">$120,000 – $200,000 <span class="price-usd">($6,900 – $11,400 USD)</span></div>
+    </div>
+    <div class="product-card recommended">
+      <div class="product-label">15 Puertas Interiores</div>
+      <h4>Parota/teca maciza, acabado grey-wash, marco Eclisse</h4>
+      <div class="product-desc">Piso a techo, acabado grey-wash como en las fotos de referencia. Marco invisible Eclisse.</div>
+      <div class="price">$330,000 – $550,000 <span class="price-usd">($18,900 – $31,400 USD)</span></div>
+    </div>
+    <div class="total-bar">
+      <span class="total-label">Total Puertas</span>
+      <span class="total-price">$450,000 – $750,000</span>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 9: Ventanería -->
+<div class="slide slide-content" id="s9">
+  <div class="slide-image">
+    <img src="img/fachada-exterior.png" alt="Fachada exterior con cantera y louvers">
+    <div class="image-label">Referencia — Marcos bronce + louvers de madera</div>
+  </div>
+  <div class="slide-info">
+    <div class="category-tag">09 — Ventanería</div>
+    <h2>Schüco Bronce + Louvers de Cedro</h2>
+    <p class="description">
+      Las fotos muestran marcos en tono bronce oscuro con persianas/louvers de madera.
+      Este elemento define las fachadas — no se puede escatimar.
+    </p>
+    <div class="product-card recommended">
+      <div class="product-label">Opción B — Recomendada</div>
+      <h4>Schüco ASS 77 PD bronce anodizado + louvers cedro operables</h4>
+      <div class="product-desc">
+        Sistema: Schüco corredizo minimalista, color bronce anodizado<br>
+        Cristal: doble bajo emisivo + control solar<br>
+        Louvers: cedro operables integrados<br>
+        Barandal: hierro forjado artesanal + vidrio laminado
+      </div>
+      <div class="price">$900,000 – $1,350,000 <span class="price-usd">($51,400 – $77,100 USD)</span></div>
+    </div>
+    <div class="total-bar">
+      <span class="total-label">Total Ventanería + Louvers + Barandales</span>
+      <span class="total-price">$900,000 – $1,350,000</span>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 10: Fachada -->
+<div class="slide slide-content" id="s10">
+  <div class="two-images">
+    <img src="img/fachada-exterior.png" alt="Fachada con cantera y vegetación">
+    <img src="img/plano-fachada2.png" alt="Plano de fachada">
+  </div>
+  <div class="slide-info">
+    <div class="category-tag">10 — Fachada</div>
+    <h2>Cantera + Estuco + Teca + Vegetación</h2>
+    <p class="description">
+      La fachada combina cantera en bloques, muros lisos crema, louvers de madera, 
+      pérgola oscura y vegetación trepadora. Exactamente lo que muestran las fotos y los planos.
+    </p>
+    <div class="product-card recommended">
+      <div class="product-label">Opción B</div>
+      <h4>Cantera SLP cincelada + estuco cal + teca + acero/madera</h4>
+      <div class="product-desc">
+        Cantera: ~80 m² exterior, cincelada artesanal<br>
+        Muros lisos: estuco cal artesanal<br>
+        Louvers: teca artesanal<br>
+        Pérgola: acero + madera de Ipe
+      </div>
+      <div class="price">$650,000 – $1,100,000 <span class="price-usd">($37,100 – $62,900 USD)</span></div>
+    </div>
+    <div class="total-bar">
+      <span class="total-label">Total Fachada</span>
+      <span class="total-price">$650,000 – $1,100,000</span>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 11: Iluminación -->
+<div class="slide slide-content" id="s11">
+  <div class="two-images">
+    <img src="img/cantera-detalle.png" alt="Wall washer bronce sobre cantera">
+    <img src="img/cocina-celosia.png" alt="Pendientes de vidrio en cocina">
+  </div>
+  <div class="slide-info">
+    <div class="category-tag">11 — Iluminación</div>
+    <h2>Bronce + Vidrio Soplado + LED Cálido</h2>
+    <p class="description">
+      Las fotos definen un lenguaje muy claro: wall washers cúbicos en bronce (up/down), 
+      apliques Art Deco con vidrio estriado, pendientes de vidrio soplado, LED strip 2700K.
+    </p>
+    <div class="product-card recommended">
+      <div class="product-label">20 Wall Washers</div>
+      <h4>Bega 33579 bronce o Royal Botania Q-Bic</h4>
+      <div class="product-desc">Cúbicos, bidireccionales, bronce. En cada muro de cantera.</div>
+      <div class="price">$160,000 – $260,000</div>
+    </div>
+    <div class="product-card recommended">
+      <div class="product-label">6 Apliques Art Deco</div>
+      <h4>Visual Comfort Etoile o Kelly Wearstler Precision</h4>
+      <div class="product-desc">Con vidrio estriado y marco metálico — como los del corredor de referencia.</div>
+      <div class="price">$90,000 – $150,000</div>
+    </div>
+    <div class="product-card recommended">
+      <div class="product-label">3 Pendientes Cocina</div>
+      <h4>Niche Modern Crystal — vidrio soplado</h4>
+      <div class="product-desc">Vidrio transparente soplado sobre la isla. Exactamente la referencia.</div>
+      <div class="price">$45,000 – $75,000</div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">50 Empotradas + LED Strip + Decorativas + Exterior</div>
+      <h4>Delta Light + Häfele Loox + Visual Comfort + Bega exterior</h4>
+      <div class="price">$435,000 – $730,000</div>
+    </div>
+    <div class="total-bar">
+      <span class="total-label">Total Iluminación</span>
+      <span class="total-price">$730,000 – $1,215,000</span>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 12: Cine -->
+<div class="slide slide-content" id="s12">
+  <div class="slide-image" style="background: #1a1510;">
+    <img src="img/plano-seccion.png" alt="Sección mostrando sótano" style="object-fit: contain; padding: 5%;">
+    <div class="image-label">Sección — Cine ubicado en Sótano 1</div>
+  </div>
+  <div class="slide-info">
+    <div class="category-tag">12 — Cine + Zona de Juegos</div>
+    <h2>Home Theater + Game Rooms</h2>
+    <p class="description">
+      Espacios dedicados confirmados en planos de S1. El cine requiere tratamiento acústico profesional.
+      La zona de juegos incluye barra/bar artesanal.
+    </p>
+    <div class="product-card recommended">
+      <div class="product-label">Cine — Opción B</div>
+      <h4>Vicoustic + Sony 4K + Screen Innovations 130" + Sonos 7.1</h4>
+      <div class="product-desc">
+        Acústica: Vicoustic Cinema Round Premium + difusores<br>
+        Piso: alfombra Kasthall lana natural<br>
+        Asientos: Natuzzi Editions reclinables (6 plazas)<br>
+        AV: Sony VPL-XW5000ES + pantalla 130" + 7.1 surround
+      </div>
+      <div class="price">$540,000 – $920,000 <span class="price-usd">($30,900 – $52,600 USD)</span></div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">Zona de Juegos</div>
+      <h4>Barra de parota artesanal + cubierta de piedra + refrigerador Miele</h4>
+      <div class="price">$250,000 – $400,000</div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">Estanque / Espejo de Agua PB</div>
+      <h4>Cantera/recinto negro + LED cálido + Astral Pool</h4>
+      <div class="price">$180,000 – $280,000</div>
+    </div>
+    <div class="total-bar">
+      <span class="total-label">Total Cine + Juegos + Estanque</span>
+      <span class="total-price">$970,000 – $1,600,000</span>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 13: Closets + Herrajes + Varios -->
+<div class="slide slide-content" id="s13">
+  <div class="slide-image">
+    <img src="img/sideboard-parota.png" alt="Sideboard de parota artesanal">
+    <div class="image-label">Referencia — Carpintería artesanal de parota</div>
+  </div>
+  <div class="slide-info">
+    <div class="category-tag">13 — Closets, Herrajes, Mobiliario + Varios</div>
+    <h2>Parota + Bronce + Artesanal</h2>
+    <p class="description">
+      Todos los elementos de carpintería, herrajes y mobiliario siguen el mismo lenguaje: 
+      madera artesanal con herrajes de bronce/hierro forjado.
+    </p>
+    <div class="product-card recommended">
+      <div class="product-label">Vestidor Master</div>
+      <h4>Teca/parota con cajones de cedro + herrajes bronce + LED</h4>
+      <div class="price">$300,000 – $500,000</div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">Closets Secundarios ×2 + Bodega</div>
+      <div class="price">$250,000 – $400,000</div>
+    </div>
+    <div class="product-card recommended">
+      <div class="product-label">Herrajes — 15 puertas</div>
+      <h4>Rocky Mountain Hardware — bronce</h4>
+      <div class="product-desc">Manijas, jaladores, bisagras — todo en bronce artesanal.</div>
+      <div class="price">$90,000 – $150,000</div>
+    </div>
+    <div class="product-card recommended">
+      <div class="product-label">Mobiliario Artesanal</div>
+      <h4>Sideboard + mesa comedor + mesas + bancos — todo parota/teca custom</h4>
+      <div class="product-desc">Piezas como las de las fotos: sideboard monumental, mesa de comedor de 3m, mesas laterales, bancos.</div>
+      <div class="price">$250,000 – $440,000</div>
+    </div>
+    <div class="product-card">
+      <div class="product-label">Impermeabilización + Aislamiento</div>
+      <div class="price">$180,000 – $280,000</div>
+    </div>
+    <div class="product-card recommended">
+      <div class="product-label">Paisajismo</div>
+      <h4>Diseño naturalista + riego + trepadoras en fachada</h4>
+      <div class="product-desc">Pastos ornamentales, flores lavanda, trepadoras sobre cantera — como la fachada de referencia.</div>
+      <div class="price">$520,000 – $900,000</div>
+    </div>
+    <div class="total-bar">
+      <span class="total-label">Total Carpintería + Herrajes + Varios</span>
+      <span class="total-price">$1,590,000 – $2,670,000</span>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 14: Summary -->
+<div class="slide slide-summary" id="s14">
+  <h2>Resumen Ejecutivo</h2>
+  <div class="summary-grid">
+    <div class="summary-cell header">Categoría</div>
+    <div class="summary-cell header">Rango MXN</div>
+    <div class="summary-cell header">Rango USD</div>
+
+    <div class="summary-cell"><div class="sum-label">Pisos (todos)</div></div>
+    <div class="summary-cell"><div class="sum-value">$1.4M – $2.2M</div></div>
+    <div class="summary-cell"><div class="sum-value">$80K – $128K</div></div>
+
+    <div class="summary-cell"><div class="sum-label">Escaleras</div></div>
+    <div class="summary-cell"><div class="sum-value">$700K – $1.1M</div></div>
+    <div class="summary-cell"><div class="sum-value">$40K – $63K</div></div>
+
+    <div class="summary-cell"><div class="sum-label">Muros</div></div>
+    <div class="summary-cell"><div class="sum-value">$736K – $1.25M</div></div>
+    <div class="summary-cell"><div class="sum-value">$42K – $71K</div></div>
+
+    <div class="summary-cell"><div class="sum-label">Plafones</div></div>
+    <div class="summary-cell"><div class="sum-value">$1.12M – $1.95M</div></div>
+    <div class="summary-cell"><div class="sum-value">$64K – $111K</div></div>
+
+    <div class="summary-cell"><div class="sum-label">Cocina</div></div>
+    <div class="summary-cell"><div class="sum-value">$1.21M – $1.94M</div></div>
+    <div class="summary-cell"><div class="sum-value">$69K – $111K</div></div>
+
+    <div class="summary-cell"><div class="sum-label">Baños</div></div>
+    <div class="summary-cell"><div class="sum-value">$1.22M</div></div>
+    <div class="summary-cell"><div class="sum-value">$70K</div></div>
+
+    <div class="summary-cell"><div class="sum-label">Puertas</div></div>
+    <div class="summary-cell"><div class="sum-value">$450K – $750K</div></div>
+    <div class="summary-cell"><div class="sum-value">$26K – $43K</div></div>
+
+    <div class="summary-cell"><div class="sum-label">Ventanería</div></div>
+    <div class="summary-cell"><div class="sum-value">$900K – $1.35M</div></div>
+    <div class="summary-cell"><div class="sum-value">$51K – $77K</div></div>
+
+    <div class="summary-cell"><div class="sum-label">Fachada</div></div>
+    <div class="summary-cell"><div class="sum-value">$650K – $1.1M</div></div>
+    <div class="summary-cell"><div class="sum-value">$37K – $63K</div></div>
+
+    <div class="summary-cell"><div class="sum-label">Iluminación</div></div>
+    <div class="summary-cell"><div class="sum-value">$730K – $1.22M</div></div>
+    <div class="summary-cell"><div class="sum-value">$42K – $70K</div></div>
+
+    <div class="summary-cell"><div class="sum-label">Cine + Juegos + Estanque</div></div>
+    <div class="summary-cell"><div class="sum-value">$970K – $1.6M</div></div>
+    <div class="summary-cell"><div class="sum-value">$55K – $91K</div></div>
+
+    <div class="summary-cell"><div class="sum-label">Carpintería + Varios</div></div>
+    <div class="summary-cell"><div class="sum-value">$1.59M – $2.67M</div></div>
+    <div class="summary-cell"><div class="sum-value">$91K – $153K</div></div>
+
+    <div class="summary-cell highlight"><div class="sum-label">TOTAL ESTIMADO</div></div>
+    <div class="summary-cell highlight"><div class="sum-value">$8.5M – $11.5M</div></div>
+    <div class="summary-cell highlight"><div class="sum-value">$486K – $657K</div></div>
+  </div>
+  <div class="summary-note">
+    Estrategia: base Opción A + Opción B en los 7 elementos clave —
+    plafones, cocina, ventanería, cantera, pisos sociales, baño master e iluminación.
+    <br><br>
+    Casa Guanábanos · Artigas Arquitectos · Cuajimalpa, CDMX · Marzo 2026
+  </div>
+</div>
+
+<!-- SLIDE 15: Artesanos -->
+<div class="slide slide-summary" id="s15">
+  <h2>Artesanos y Talleres Recomendados</h2>
+  <div style="max-width:750px; width:100%;">
+    <table style="width:100%; border-collapse:collapse; margin-top:1em;">
+      <thead>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.15);">
+          <th style="text-align:left; padding:12px 16px; font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--stone); font-weight:500;">Especialidad</th>
+          <th style="text-align:left; padding:12px 16px; font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--stone); font-weight:500;">Taller / Artesano</th>
+          <th style="text-align:left; padding:12px 16px; font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--stone); font-weight:500;">Ubicación</th>
+        </tr>
+      </thead>
+      <tbody style="font-size:0.85rem; color:var(--cream);">
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+          <td style="padding:14px 16px;">Carpintería monumental<br><span style="font-size:0.7rem;color:var(--stone);">Cocina, aparador, puertas, celosía</span></td>
+          <td style="padding:14px 16px;">Taller Lur / Esrawe Studio subcontratistas</td>
+          <td style="padding:14px 16px;">CDMX / Jalisco</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+          <td style="padding:14px 16px;">Cantera labrada<br><span style="font-size:0.7rem;color:var(--stone);">Muros, fachada, lavabos</span></td>
+          <td style="padding:14px 16px;">Canteros de San Luis de la Paz / Ezequiel Montes</td>
+          <td style="padding:14px 16px;">Guanajuato / Querétaro</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+          <td style="padding:14px 16px;">Celosía / Plafón artesanal<br><span style="font-size:0.7rem;color:var(--stone);">Artesonado de cocina</span></td>
+          <td style="padding:14px 16px;">Carpinteros de Michoacán (tradición de artesonado)</td>
+          <td style="padding:14px 16px;">Michoacán</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+          <td style="padding:14px 16px;">Piedra tallada<br><span style="font-size:0.7rem;color:var(--stone);">Lavabos, tinas, mesas</span></td>
+          <td style="padding:14px 16px;">Talleres de Puebla / Oaxaca</td>
+          <td style="padding:14px 16px;">Puebla / Oaxaca</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+          <td style="padding:14px 16px;">Hierro forjado<br><span style="font-size:0.7rem;color:var(--stone);">Herrajes, barandales</span></td>
+          <td style="padding:14px 16px;">Talleres de Tonalá / San Miguel de Allende</td>
+          <td style="padding:14px 16px;">Jalisco / Guanajuato</td>
+        </tr>
+        <tr>
+          <td style="padding:14px 16px;">Vidrio soplado<br><span style="font-size:0.7rem;color:var(--stone);">Luminarias pendientes</span></td>
+          <td style="padding:14px 16px;">Nouvel Studio / Vidrio Soplado de Tonalá</td>
+          <td style="padding:14px 16px;">CDMX / Jalisco</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="summary-note" style="margin-top:2.5em;">
+    Este proyecto se logra con artesanos mexicanos de primer nivel, no con catálogos europeos.<br>
+    La calidad artesanal ES el lujo.
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="nav">
+  <button onclick="prev()" aria-label="Anterior">&#8592;</button>
+  <button onclick="next()" aria-label="Siguiente">&#8594;</button>
+</div>
+<div class="slide-counter" id="counter">1 / 16</div>
+
+<script>
+  let current = 0;
+  const slides = document.querySelectorAll('.slide');
+  const total = slides.length;
+  const counter = document.getElementById('counter');
+
+  function show(n) {
+    slides[current].classList.remove('active');
+    current = (n + total) % total;
+    slides[current].classList.add('active');
+    counter.textContent = `${current + 1} / ${total}`;
+  }
+  function next() { show(current + 1); }
+  function prev() { show(current - 1); }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); next(); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
+  });
+
+  let touchStartX = 0;
+  document.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; });
+  document.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); }
+  });
+</script>
+
+</body>
+</html>
