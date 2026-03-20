@@ -16,24 +16,24 @@
 | Zona | Color | Ubicación | Función |
 |------|-------|-----------|---------|
 | 1 — Cocción | Naranja | Muro B (pared de cocción) | Estufa, horno, campana, ollas, sartenes |
-| 2 — Preparación | Verde | Isla central | Prep, corte, mezcla, tarja principal |
+| 2 — Preparación | Verde | Isla central | Prep, corte, mezcla (sin tarja — cubierta libre) |
 | 3 — Almacenamiento | Azul | Muro C (pared de almacenamiento) | Vajilla, cristalería, aparatos, café |
-| 4 — Refrigeración | Morado | Muro C (columnas) | Refrigerador, cava de vinos, despensa seca |
-| 5 — Limpieza | Amarillo | Isla (zona tarja) | Tarja, lavavajillas, basura |
+| 4 — Refrigeración | Morado | **Fuera de Muro C** (por definir) | Refrigerador, cava — alacena, bar o zona contigua |
+| 5 — Limpieza | Amarillo | Muro C (módulo tarja) | Tarja farmhouse moderna, lavavajillas, basura |
 | 6 — Café | Café | Muro C (centro) | Espresso, molino, cafetera |
 
 ### Triángulo de Trabajo
 
 ```
-         TARJA (Isla)
-          /          \
-    ~1.8m /            \ ~2.0m
-        /                \
-  ESTUFA (Muro B) ——— REFRIGERADOR (Muro C)
-              ~2.5m
+  REFRIGERADOR (ubicación TBD — ya no en Muro C)
+           |
+           |  ~1.8–2.5m (según alacena / bar)
+           |
+  TARJA (Muro C) ———————— ESTUFA (Muro B)
+        ~2.0m                      ~2.5m
 ```
 
-Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia de trabajo.
+Perímetro del triángulo cocina: **ajustar con arquitecto** cuando quede fija la ubicación del refrigerador; objetivo seguir en rango **4–8 m** entre fregadero, estufa y refri.
 
 ---
 
@@ -58,16 +58,20 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 | **Campana** | Custom de obra — estuco/yeso sobre estructura metálica, forma trapezoidal, acabado liso crema. Extractor interno **Faber** o **Vent-A-Hood** 1200 CFM oculto. | $45,000–75,000 |
 | **Cubierta perimetral** | Mármol Crema Marfil, 3cm espesor, canto recto | $25,000–40,000 |
 
-### Muro C — Pared de Almacenamiento
+### Muro C — Pared de Almacenamiento + Limpieza
 
 ![Muro C - Almacenamiento](presentacion/img/cocina-muro-almacen.png)
 
+> **Nota:** El render `cocina-muro-almacen.png` aún muestra columnas de frío; el diseño actual **no** incluye refrigerador ni cava en este muro — sustituidos por tarja + lavavajillas.
+
 | Elemento | Especificación | Precio Estimado |
 |----------|---------------|-----------------|
-| **Columna refrigerador** (80cm) | Paneles de roble blanqueado integrando **Sub-Zero** Designer Column | $85,000–130,000 (electrodoméstico) + $25,000 (paneles) |
-| **Columna cava** (60cm) | Panel de roble blanqueado integrando **Sub-Zero** Designer Wine Column, ~46 botellas | $55,000–85,000 (electrodoméstico) + $15,000 (paneles) |
+| **Módulo tarja** (~90cm) | Gabinete bajo roble blanqueado; **tarja farmhouse moderna** (delantera plana, líneas limpias): **Kohler Whitehaven** K-6489 (fireclay ~84cm) o **Blanco IKON** 401900 (Silgranit, apron recto). Salpicadero continuo **mármol Crema Marfil** en zona húmeda. | $22,000–40,000 (tarja) + $28,000–45,000 (mueble + instalación) |
+| **Grifería** | **Brizo Litze** bridge con spray extraíble, o **Delta Emmeline** en negro mate / latón cepillado — perfil más contemporáneo que bridge victoriano | $18,000–35,000 |
+| **Lavavajillas** (60cm) | **Miele** G 7566 SCVi totalmente integrado, panel roble blanqueado, **inmediato a la tarja** | $42,000–55,000 (ver electrodomésticos) |
+| **Basura integrada** | **Häfele** o **Rev-A-Shelf** triple (orgánico / reciclaje / general), cajón bajo cubierta junto al lavavajillas | $8,000–12,000 |
 | **Gabinetes inferiores centro** (~1.8m) | Roble blanqueado, cajones profundos (para KitchenAid, procesador, Nutribullet) + puertas con entrepaños | $60,000–90,000 |
-| **Cubierta centro** | Mármol Crema Marfil, 3cm, ~1.8m lineal | $15,000–25,000 |
+| **Cubierta centro** | Mármol Crema Marfil, 3cm, corrido desde módulo tarja | $18,000–30,000 |
 | **Repisas flotantes** (×3) | Roble blanqueado con LED strip Häfele Loox debajo de cada una | $18,000–27,000 |
 | **Estación de café** | Espacio dedicado sobre cubierta: enchufe oculto detrás para espresso + molino | Incluido en eléctrica |
 
@@ -78,13 +82,11 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 | Elemento | Especificación | Precio Estimado |
 |----------|---------------|-----------------|
 | **Estructura isla** (3.5m × 1.2m) | Base de roble blanqueado con paneles verticales tipo wainscoting, estructura interior de MDF/triplay | $90,000–140,000 |
-| **Cubierta isla waterfall** | **Mármol Crema Marfil**, 8cm espesor, con cascada (waterfall) en un extremo. Losa seleccionada por veta. ~4.5 m² total. | $140,000–220,000 |
-| **Tarja** | **Rohl Shaws** Original farmhouse/apron-front, fireclay blanca, 76cm | $25,000–40,000 |
-| **Grifería** | **Waterstone** Traditional PLP Bridge con spray, acabado bronce antiguo | $35,000–55,000 |
-| **Lavavajillas** | **Miele** G 7000, panel integrado roble blanqueado, junto a tarja | $42,000–55,000 |
-| **Basura integrada** | Sistema **Häfele** o **Rev-A-Shelf** triple (orgánico / reciclaje / general), en cajón junto a tarja | $8,000–12,000 |
+| **Cubierta isla waterfall** | **Mármol Crema Marfil**, 8cm espesor, con cascada (waterfall) en un extremo. Losa seleccionada por veta. ~4.5 m² total. **Sin perforación para tarja** — superficie continua para prep y servicio. | $140,000–220,000 |
 | **Bancos** (×5) | Artesanales: madera clara (fresno o encino blanqueado) + asiento tejido de palma/enea, sin respaldo | $5,000–8,000 c/u = $25,000–40,000 |
 | **Pendientes** (×3) | Cerámica artesanal blanca, forma orgánica/escultórica (**Nouvel Studio** CDMX o **Ceramic Series** de Entler Studio), cordón negro | $15,000–30,000 c/u = $45,000–90,000 |
+
+> **Nota:** El render `cocina-isla.png` puede mostrar tarja; el diseño actual concentra **tarja + lavavajillas en Muro C**.
 
 ---
 
@@ -94,14 +96,15 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 |---|-----------------|---------------------------|-----------|-------------|
 | 1 | **Range (estufa + horno)** | **Wolf** DF48650/S — 48" Dual Fuel, 6 quemadores + griddle, 2 hornos, acero inoxidable | Muro B — centro | $180,000–220,000 |
 | 2 | **Extractor** (oculto en campana de estuco) | **Vent-A-Hood** BH234SLD o **Faber** Inca Smart — 1200 CFM, liner insert oculto | Dentro de campana custom Muro B | $25,000–45,000 |
-| 3 | **Refrigerador columna** | **Sub-Zero** IC-30R Designer Column — 76cm, panelable | Muro C — izquierda | $85,000–130,000 |
-| 4 | **Cava de vinos** | **Sub-Zero** DEC2450W Designer Wine Column — 46 botellas, 2 zonas | Muro C — junto a refri | $55,000–85,000 |
-| 5 | **Lavavajillas** | **Miele** G 7566 SCVi — totalmente integrado, AutoDos, panel custom | Isla — junto a tarja | $42,000–55,000 |
+| 3 | **Refrigerador** | *Por definir* con arquitecto — columna integrada, French door o combi; **no** va en Muro C | Alacena, bar o zona contigua | (línea aparte en presupuesto general) |
+| 4 | **Cava de vinos** | *Por definir* — columna, bajo cubierta en bar, o pie independiente (ej. EuroCave) | Fuera de Muro C | (línea aparte) |
+| 5 | **Lavavajillas** | **Miele** G 7566 SCVi — totalmente integrado, AutoDos, panel roble | Muro C — junto a tarja | $42,000–55,000 |
 | 6 | **Microondas** (opcional) | **Wolf** cajón microondas MDD30 — empotrado en isla o Muro C | Cajón en isla (lado interior) | $28,000–38,000 |
 | 7 | **Máquina de espresso** | **Breville** Barista Express o **De'Longhi** La Specialista | Muro C — estación de café (sobre cubierta) | $12,000–25,000 |
 | 8 | **Molino de café** | **Baratza** Encore ESP o **Breville** Smart Grinder Pro | Muro C — junto a espresso | $5,000–8,000 |
 
-### Total Electrodomésticos: **$432,000–606,000**
+### Total electrodomésticos en cocina (sin refri/cava en Muro C): **$264,000–391,000**  
+*Refrigerador y cava: presupuestar según ubicación final.*
 
 ---
 
@@ -138,7 +141,7 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 | Cajón isla #4 | Tazas y cucharas medidoras, ralladores, peladores, mandolina | Cajón con inserto organizador |
 | Cajón isla #5 | Moldes para hornear, cortadores, rodillo, tapete silicón | Cajón profundo |
 | Cajón isla #6 | Papel aluminio, plástico adherente, bolsas resellables, papel encerado | Cajón con cortador integrado (Häfele) |
-| Puerta isla #1 | Basura triple (orgánico / reciclaje / general) | Rev-A-Shelf triple pull-out |
+| Puerta isla #1 | Electrodoméstico menor, despensa seca compacta, o cajón extra de prep | A criterio — la **basura triple** pasó a **Muro C** (módulo limpieza) |
 
 #### ZONA 3 — ALMACENAMIENTO + DISPLAY (Muro C — repisas y gabinetes centro)
 
@@ -151,27 +154,24 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 | Gabinete Muro C #2 | Cristalería (copas de vino, vasos, copas champagne) | Entrepaños ajustables |
 | Gabinete Muro C #3 (cajones) | Mantelería: manteles individuales, servilletas de tela, caminos de mesa | Cajones poco profundos |
 
-#### ZONA 4 — REFRIGERACIÓN + DESPENSA (Muro C — columnas y gabinetes adyacentes)
+#### ZONA 4 — DESPENSA SECA + FRÍO (frío fuera de Muro C)
 
 | Ubicación | Contenido | Tipo de almacenamiento |
 |-----------|-----------|----------------------|
-| Sub-Zero columna (zona sup.) | Lácteos, huevos, condimentos, salsas | Entrepaños del refrigerador |
-| Sub-Zero columna (zona med.) | Carnes, aves, pescados (cajón sellado) | Cajón del refrigerador |
-| Sub-Zero columna (zona inf.) | Frutas, verduras, hierbas frescas | Cajones de humedad controlada |
-| Cava de vinos (zona sup.) | Vinos blancos + espumosos (5–8°C) | Zona fría del cava |
-| Cava de vinos (zona inf.) | Vinos tintos (14–18°C) | Zona templada del cava |
-| Gabinete bajo (junto a refri) | **Despensa seca**: pastas, arroz, granos, harinas, azúcar en contenedores herméticos (OXO Pop) | Entrepaños + contenedores |
-| Gabinete bajo #2 | Enlatados, conservas, miel, mermeladas, cereales | Entrepaños ajustables |
-| Gabinete bajo #3 | Café en grano, tés, cápsulas, endulzantes | Cerca de estación de café |
+| **Refrigerador** (ubicación TBD) | Lácteos, carnes, verduras, etc. | Según equipo elegido |
+| **Cava** (ubicación TBD) | Vinos por temperatura | Columna, bajo cubierta o pie |
+| Gabinete bajo Muro C (si aplica) o alacena | **Despensa seca**: pastas, arroz, granos, harinas, azúcar en contenedores herméticos (OXO Pop) | Entrepaños + contenedores |
+| Gabinete / entrepaño adyacente | Enlatados, conservas, miel, mermeladas, cereales | Entrepaños ajustables |
+| Cerca de estación de café | Café en grano, tés, cápsulas, endulzantes | Cajón o tarro |
 
-#### ZONA 5 — LIMPIEZA (Isla — bajo tarja)
+#### ZONA 5 — LIMPIEZA (Muro C — módulo tarja + lavavajillas)
 
 | Ubicación | Contenido | Tipo de almacenamiento |
 |-----------|-----------|----------------------|
-| Bajo tarja izq. | Jabón para trastes, esponja, cepillo (organizador de puerta) | Organizador de puerta Rev-A-Shelf |
-| Bajo tarja centro | Productos de limpieza (spray multiusos, desengrasante) | Entrepaño |
-| Bajo tarja der. | Trapos, toallas de cocina (barra interior) | Barra de puerta |
+| Bajo tarja | Jabón, esponja, cepillo; productos de limpieza frecuente | Organizador de puerta Rev-A-Shelf + entrepaño |
 | Junto a tarja | **Lavavajillas Miele** integrado | Panel custom roble blanqueado |
+| Junto a lavavajillas | **Basura triple** (orgánico / reciclaje / general) | Cajón Rev-A-Shelf / Häfele |
+| Gabinete lateral (opcional) | Trapos, toallas de cocina, repuestos | Cajón o barra interior |
 
 #### ZONA 6 — ESTACIÓN DE CAFÉ (Muro C — centro de cubierta)
 
@@ -221,10 +221,9 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 ## 8. Instalaciones MEP Requeridas
 
 ### Hidráulica (Plomería)
-- Toma de agua fría + caliente para tarja farmhouse en isla (requiere piso técnico o tubería bajo losa)
-- Desagüe de isla (bomba si es necesario por pendiente)
-- Toma de agua para lavavajillas (junto a tarja)
-- Toma de agua para refrigerador Sub-Zero (dispensador + fábrica de hielos)
+- Toma de agua fría + caliente + desagüe para **tarja farmhouse en Muro C** (muro de carga — típicamente más simple que isla)
+- Toma de agua para lavavajillas (mismo módulo Muro C, junto a tarja)
+- Toma de agua para **refrigerador** (si el modelo elegido lleva dispensador / hielos — según ubicación final)
 - Toma de agua para máquina de café (opcional — línea directa)
 
 ### Gas LP
@@ -234,9 +233,9 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 
 ### Eléctrica
 - Circuito dedicado 240V/30A para estufa Wolf (horno eléctrico del Dual Fuel)
-- Circuito dedicado 120V/20A para refrigerador Sub-Zero
-- Circuito dedicado 120V/20A para lavavajillas Miele
-- Circuito dedicado 120V/20A para cava de vinos
+- Circuito dedicado 120V/20A para **refrigerador** (donde se instale)
+- Circuito dedicado 120V/20A para lavavajillas Miele (Muro C)
+- Circuito dedicado 120V/20A para **cava de vinos** (si aplica en su ubicación)
 - 2 contactos dobles para estación de café (detrás, ocultos)
 - 4 contactos en isla (2 por lado, retráctiles o pop-up **Häfele** para evitar visual)
 - 2 contactos en zona de repisas Muro B (para pequeños electrodomésticos temporales)
@@ -258,13 +257,11 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 | Cubiertas mármol perimetrales | $40,000–65,000 |
 | **Electrodomésticos** | |
 | — Wolf 48" Dual Fuel | $180,000–220,000 |
-| — Sub-Zero Refrigerador columna | $85,000–130,000 |
-| — Sub-Zero Cava de vinos | $55,000–85,000 |
-| — Miele Lavavajillas integrado | $42,000–55,000 |
+| — Miele Lavavajillas integrado (Muro C) | $42,000–55,000 |
 | — Wolf cajón microondas (opcional) | $28,000–38,000 |
 | — Espresso + molino | $17,000–33,000 |
-| Tarja farmhouse Rohl Shaws | $25,000–40,000 |
-| Grifería Waterstone bronce | $35,000–55,000 |
+| Tarja farmhouse moderna (Muro C) | $22,000–40,000 |
+| Grifería bridge contemporánea (Brizo / Delta) | $18,000–35,000 |
 | Bancos artesanales ×5 | $25,000–40,000 |
 | Pendientes cerámica artesanal ×3 | $45,000–90,000 |
 | Spots empotrados en vigas ×8 | $18,000–24,000 |
@@ -278,8 +275,8 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 
 | | MXN | USD |
 |--|-----|-----|
-| **Rango** | **$1,701,500 – $2,711,500** | **$97,200 – $154,900** |
-| **Punto medio recomendado** | **~$2,100,000** | **~$120,000** |
+| **Rango** | **$1,540,000 – $2,480,000** | **$88,000 – $142,000** |
+| **Punto medio recomendado** | **~$2,010,000** | **~$115,000** |
 
 ---
 
@@ -313,11 +310,11 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 | Mármol (cubiertas, waterfall, salpicadera) | **Mármoles Arca** o **Cosentino** CDMX | Seleccionar losa personalmente por veta |
 | Campana de estuco | Albañil + estucador — construida in situ sobre estructura metálica | Coordinar con proveedor de extractor para dimensiones |
 | Herrería (herrajes iron) | Talleres de **Tonalá** o **San Miguel de Allende** | Muestras de bin-pulls en negro mate forjado |
-| Tarja + grifería | Distribuidor **Waterstone** en México: **DuPont México** o importación directa | Lead time: 8–12 semanas |
-| Electrodomésticos Wolf/Sub-Zero | **Sub-Zero & Wolf México** — showroom Polanco | Visitar showroom para confirmar modelos |
+| Tarja + grifería | **Kohler** / **Blanco** distribuidores CDMX; grifería **Brizo** / **Delta** | Confirmar medida de vano con tarja elegida |
+| Electrodomésticos Wolf + Miele | **Sub-Zero & Wolf México** (Wolf) + **Miele** Centro / distribuidor | Refri/cava: definir marca según ubicación fuera de Muro C |
 | Pendientes cerámica | **Nouvel Studio** (CDMX) o **Entler Studio** (importación) | Pedir muestras de forma y tamaño |
 | Bancos artesanales | Carpintero de fresno/encino + artesano de palma (Michoacán) | Prototipo antes de producir los 5 |
 
 ---
 
-*Última actualización: 20 de marzo de 2026*
+*Última actualización: 20 de marzo de 2026 — Muro C: tarja farmhouse moderna + lavavajillas; sin columnas de frío en cocina.*
