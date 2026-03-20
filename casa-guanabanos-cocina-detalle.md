@@ -9,7 +9,7 @@
 
 ## 1. Planta (Vista Aérea)
 
-![Planta Cocina](presentacion-acabados/img/cocina-planta.png)
+![Planta Cocina](presentacion/img/cocina-planta.png)
 
 ### Distribución por Zonas
 
@@ -47,7 +47,7 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 
 ### Muro B — Pared de Cocción
 
-![Muro B - Cocción](presentacion-acabados/img/cocina-muro-coccion.png)
+![Muro B - Cocción](presentacion/img/cocina-muro-coccion.png)
 
 | Elemento | Especificación | Precio Estimado |
 |----------|---------------|-----------------|
@@ -60,7 +60,7 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 
 ### Muro C — Pared de Almacenamiento
 
-![Muro C - Almacenamiento](presentacion-acabados/img/cocina-muro-almacen.png)
+![Muro C - Almacenamiento](presentacion/img/cocina-muro-almacen.png)
 
 | Elemento | Especificación | Precio Estimado |
 |----------|---------------|-----------------|
@@ -73,7 +73,7 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 
 ### Isla Central
 
-![Isla Central](presentacion-acabados/img/cocina-isla.png)
+![Isla Central](presentacion/img/cocina-isla.png)
 
 | Elemento | Especificación | Precio Estimado |
 |----------|---------------|-----------------|
@@ -107,7 +107,7 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 
 ## 4. Organización de Almacenamiento
 
-![Organización de Almacenamiento](presentacion-acabados/img/cocina-organizacion.png)
+![Organización de Almacenamiento](presentacion/img/cocina-organizacion.png)
 
 ### Detalle por Zona
 
@@ -287,11 +287,11 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 
 | Vista | Imagen |
 |-------|--------|
-| Planta (zonas) | ![](presentacion-acabados/img/cocina-planta.png) |
-| Muro B — Cocción | ![](presentacion-acabados/img/cocina-muro-coccion.png) |
-| Muro C — Almacenamiento | ![](presentacion-acabados/img/cocina-muro-almacen.png) |
-| Isla Central | ![](presentacion-acabados/img/cocina-isla.png) |
-| Organización | ![](presentacion-acabados/img/cocina-organizacion.png) |
+| Planta (zonas) | ![](presentacion/img/cocina-planta.png) |
+| Muro B — Cocción | ![](presentacion/img/cocina-muro-coccion.png) |
+| Muro C — Almacenamiento | ![](presentacion/img/cocina-muro-almacen.png) |
+| Isla Central | ![](presentacion/img/cocina-isla.png) |
+| Organización | ![](presentacion/img/cocina-organizacion.png) |
 
 ---
 
@@ -299,9 +299,9 @@ Perímetro total: **~6.3m** — dentro del rango ideal (4–8m) para eficiencia 
 
 | Referencia | Elementos que aplican |
 |------------|----------------------|
-| ![](presentacion-acabados/img/ref-cocina-1.png) | Isla monumental + campana estuco + repisas abiertas + pendientes vidrio + bancos rush + ventanal steel |
-| ![](presentacion-acabados/img/ref-cocina-2.png) | Gabinetes roble + herrajes iron bin-pull + campana madera + tarja farmhouse + techo vigas |
-| ![](presentacion-acabados/img/ref-cocina-3.png) | Tono de madera correcto (roble blanqueado) + ventanal arco steel-frame + pendientes cerámica + repisas abiertas |
+| ![](presentacion/img/ref-cocina-1.png) | Isla monumental + campana estuco + repisas abiertas + pendientes vidrio + bancos rush + ventanal steel |
+| ![](presentacion/img/ref-cocina-2.png) | Gabinetes roble + herrajes iron bin-pull + campana madera + tarja farmhouse + techo vigas |
+| ![](presentacion/img/ref-cocina-3.png) | Tono de madera correcto (roble blanqueado) + ventanal arco steel-frame + pendientes cerámica + repisas abiertas |
 
 ---
 
