@@ -2,7 +2,7 @@
 
 > **Estilo**: Hacienda contemporánea — roble blanqueado + mármol crema + estuco + hierro negro
 > **Arquitecto**: Artigas Arquitectos
-> **Superficie estimada**: ~25 m² (5.5m × 4.5m)
+> **Superficie estimada**: ~25 m² (5.5m × 4.5m; la dimensión de **4.5 m** era la referencia previa del muro de cocción — ahora **Muro B = 5.0 m** de carrera de mueble para integrar refri + estufa).
 > **Altura libre**: 3.20m (plafón de vigas expuestas)
 
 ---
@@ -15,25 +15,25 @@
 
 | Zona | Color | Ubicación | Función |
 |------|-------|-----------|---------|
-| 1 — Cocción | Naranja | Muro B (pared de cocción) | Estufa, horno, campana, ollas, sartenes |
+| 1 — Cocción + frío | Naranja | Muro B (pared de cocción, **5.0 m**) | **Sub-Zero** French door 49", estufa **Wolf** 48", campana, almacén de cocina |
 | 2 — Preparación | Verde | Isla central | Prep, corte, mezcla (sin tarja — cubierta libre) |
 | 3 — Almacenamiento | Azul | Muro C (pared de almacenamiento) | Vajilla, cristalería, aparatos, café |
-| 4 — Refrigeración | Morado | **Fuera de Muro C** (por definir) | Refrigerador, cava — alacena, bar o zona contigua |
+| 4 — Refrigeración | Morado | **Muro B** (integrado con cocción) | **Sub-Zero** French door 49"; cava sigue **por definir** (bar / otro muro) |
 | 5 — Limpieza | Amarillo | Muro C (módulo tarja) | Tarja farmhouse moderna, lavavajillas, basura |
 | 6 — Café | Café | Muro C (centro) | Espresso, molino, cafetera |
 
 ### Triángulo de Trabajo
 
 ```
-  REFRIGERADOR (ubicación TBD — ya no en Muro C)
+  REFRIGERADOR (Muro B, junto a estufa)
            |
-           |  ~1.8–2.5m (según alacena / bar)
+           |  ~2.0–3.0m (según geometría isla / Muro C)
            |
   TARJA (Muro C) ———————— ESTUFA (Muro B)
         ~2.0m                      ~2.5m
 ```
 
-Perímetro del triángulo cocina: **ajustar con arquitecto** cuando quede fija la ubicación del refrigerador; objetivo seguir en rango **4–8 m** entre fregadero, estufa y refri.
+Perímetro del triángulo: **refri y estufa comparten Muro B**; distancia refri–tarja depende del plano. Objetivo **4–8 m** de perímetro entre los tres puntos.
 
 ---
 
@@ -45,18 +45,29 @@ Perímetro del triángulo cocina: **ajustar con arquitecto** cuando quede fija l
 - Opcional: sección baja de gabinetes con tarja secundaria de preparación bajo la ventana
 - **Sin gabinetes superiores** — la vista al jardín es el protagonista
 
-### Muro B — Pared de Cocción
+### Muro B — Pared de Cocción + Refrigeración integrada
+
+**Carrera total de mueble (cubierta inferior): 5.0 m** — cabe **Sub-Zero French door 49"** + **Wolf 48"** + ala de gabinetes/repisas a cada lado, con holguras de instalación. Distribución de referencia (izquierda → derecha, **invertible** según croquis del arquitecto):
+
+```
+[ Ala ~1.22 m ] + [ Sub-Zero 49" ~1.245 m ] + [ filler ~0.08 m ] + [ Wolf 48" ~1.22 m ] + [ Ala ~1.23 m ]  ≈  5.00 m
+```
+
+> **Nota:** Cifras de vano son **shop-drawing**; confirmar con hoja de corte Sub-Zero del modelo exacto (49" nominal) y nicho Wolf. El render `cocina-muro-coccion.png` no refleja el refri en este muro.
 
 ![Muro B - Cocción](presentacion/img/cocina-muro-coccion.png)
 
 | Elemento | Especificación | Precio Estimado |
 |----------|---------------|-----------------|
-| **Gabinetes inferiores** (×2 secciones, ~2m total) | Roble blanqueado, cajones con guías de cierre suave Blum Tandembox, frentes shaker | $80,000–120,000 |
-| **Herrajes** | Bin-pulls de hierro forjado negro artesanal (tipo RK International o artesanales de Tonalá) | $12,000–18,000 |
-| **Repisas flotantes** (×6, 3 por lado) | Roble blanqueado macizo, 30cm profundidad, 80cm largo, soporte oculto, LED strip Häfele Loox 2700K debajo | $36,000–54,000 |
-| **Salpicadera** | Losa completa de **mármol Crema Marfil** — del counter a la campana (~1.5m × 1.5m) | $35,000–55,000 |
-| **Campana** | Custom de obra — estuco/yeso sobre estructura metálica, forma trapezoidal, acabado liso crema. Extractor interno **Faber** o **Vent-A-Hood** 1200 CFM oculto. | $45,000–75,000 |
-| **Cubierta perimetral** | Mármol Crema Marfil, 3cm espesor, canto recto | $25,000–40,000 |
+| **Sub-Zero French door 49"** | Integrado entre paneles de roble blanqueado; modelo a confirmar en catálogo actual (línea built-in / Pro). Toma de agua si aplica hielo / dispensador. | $400,000–650,000 (equipo + paneles — validar con distribuidor) |
+| **Wolf 48" Dual Fuel** | **DF48650/S** — centro del módulo de cocción; alineado a cubierta y zócalo | (ver electrodomésticos) |
+| **Filler térmico / junta** | Sep. **~8 cm** entre mueble de refri y mueble de estufa (ajustable); acabado a juego | Incluido en carpintería |
+| **Gabinetes inferiores** (×2 alas, **~2.45 m** total) | Roble blanqueado, cajones Blum Tandembox, frentes shaker — **ala izquierda ~1.22 m** + **ala derecha ~1.23 m** | $95,000–145,000 |
+| **Herrajes** | Bin-pulls hierro forjado negro (RK International / Tonalá) | $14,000–22,000 |
+| **Repisas flotantes** (×6, 3 por ala) | Roble macizo, 30 cm fondo, **~55–65 cm** largo por repisa (encajan en alas ~1.22–1.23 m), LED Häfele Loox 2700K | $38,000–58,000 |
+| **Salpicadera** | **Mármol Crema Marfil** detrás de **Wolf**: losa continua del counter a campana **~1.5 m × ~1.5 m**; tras **Sub-Zero**: panel a juego o acero según ficha de integración | $42,000–68,000 |
+| **Campana** | Estuco/yeso sobre estructura metálica, centrada sobre **48"** Wolf; inserto **Faber** o **Vent-A-Hood** 1200 CFM | $45,000–75,000 |
+| **Cubierta Muro B** | Mármol Crema Marfil 3 cm, **corrido ~5.0 m** | $42,000–68,000 |
 
 ### Muro C — Pared de Almacenamiento + Limpieza
 
@@ -94,17 +105,17 @@ Perímetro del triángulo cocina: **ajustar con arquitecto** cuando quede fija l
 
 | # | Electrodoméstico | Marca / Modelo Recomendado | Ubicación | Precio Est. |
 |---|-----------------|---------------------------|-----------|-------------|
-| 1 | **Range (estufa + horno)** | **Wolf** DF48650/S — 48" Dual Fuel, 6 quemadores + griddle, 2 hornos, acero inoxidable | Muro B — centro | $180,000–220,000 |
+| 1 | **Range (estufa + horno)** | **Wolf** DF48650/S — 48" Dual Fuel, 6 quemadores + griddle, 2 hornos, acero inoxidable | Muro B — módulo cocción (~1.22 m vano) | $180,000–220,000 |
 | 2 | **Extractor** (oculto en campana de estuco) | **Vent-A-Hood** BH234SLD o **Faber** Inca Smart — 1200 CFM, liner insert oculto | Dentro de campana custom Muro B | $25,000–45,000 |
-| 3 | **Refrigerador** | *Por definir* con arquitecto — columna integrada, French door o combi; **no** va en Muro C | Alacena, bar o zona contigua | (línea aparte en presupuesto general) |
+| 3 | **Refrigerador** | **Sub-Zero** French door **49"** built-in — integrado con paneles; **confirmar número de modelo** en showroom | Muro B — al lado del Wolf (ver diagrama 5.0 m) | $400,000–650,000 |
 | 4 | **Cava de vinos** | *Por definir* — columna, bajo cubierta en bar, o pie independiente (ej. EuroCave) | Fuera de Muro C | (línea aparte) |
 | 5 | **Lavavajillas** | **Miele** G 7566 SCVi — totalmente integrado, AutoDos, panel roble | Muro C — junto a tarja | $42,000–55,000 |
 | 6 | **Microondas** (opcional) | **Wolf** cajón microondas MDD30 — empotrado en isla o Muro C | Cajón en isla (lado interior) | $28,000–38,000 |
 | 7 | **Máquina de espresso** | **Breville** Barista Express o **De'Longhi** La Specialista | Muro C — estación de café (sobre cubierta) | $12,000–25,000 |
 | 8 | **Molino de café** | **Baratza** Encore ESP o **Breville** Smart Grinder Pro | Muro C — junto a espresso | $5,000–8,000 |
 
-### Total electrodomésticos en cocina (sin refri/cava en Muro C): **$264,000–391,000**  
-*Refrigerador y cava: presupuestar según ubicación final.*
+### Total electrodomésticos en cocina: **$664,000 – 1,041,000** (incluye Sub-Zero en Muro B; sin cava)  
+*Cava: línea aparte. Precio Sub-Zero: validar con **Sub-Zero & Wolf México**.*
 
 ---
 
@@ -114,22 +125,18 @@ Perímetro del triángulo cocina: **ajustar con arquitecto** cuando quede fija l
 
 ### Detalle por Zona
 
-#### ZONA 1 — COCCIÓN (Muro B — flanqueando la estufa)
+#### ZONA 1 — COCCIÓN + FRÍO (Muro B — 5.0 m: ala + Sub-Zero + Wolf + ala)
+
+Orden de referencia: **ala A** (un extremo) — **Sub-Zero 49"** — **Wolf 48"** — **ala B** (otro extremo). Si el croquis invierte el orden, renombrar A/B.
 
 | Ubicación | Contenido | Tipo de almacenamiento |
 |-----------|-----------|----------------------|
-| Cajón inferior izq. #1 | Ollas grandes (stock pot, dutch oven, olla de presión) | Cajón profundo con divisores |
-| Cajón inferior izq. #2 | Sartenes (cast iron, antiadherente, acero) | Cajón con organizador vertical para sartenes |
-| Cajón inferior izq. #3 | Charolas de horno, moldes para pizza, rejillas | Cajón con divisores verticales |
-| Repisa abierta izq. #1 | Ollas decorativas de cobre/barro, mortero | Display decorativo |
-| Repisa abierta izq. #2 | Bowls de servir, jarras de cerámica | Display decorativo |
-| Repisa abierta izq. #3 | Vasos, copas de uso diario | Display accesible |
-| Cajón inferior der. #1 | Cucharones, espátulas, pinzas, cucharas de madera | Cajón con inserto organizador |
-| Cajón inferior der. #2 | Aceites, vinagres, especias de uso diario | Cajón con inserto para botellas |
-| Cajón inferior der. #3 | Tablas de corte, rejillas, manteles individuales | Cajón con divisores |
-| Repisa abierta der. #1 | Platos de servir grandes | Display |
-| Repisa abierta der. #2 | Especieros, aceites decorativos, libros de cocina | Display |
-| Repisa abierta der. #3 | Tazas, platos pequeños, bowls | Display accesible |
+| **Sub-Zero 49"** (vano integrado) | Refrigeración fresca + congelación (según modelo) | Interior de equipo |
+| **Wolf 48"** | Cocción / hornos | — |
+| Cajones ala **A** #1–3 | Ollas, sartenes, charolas de horno (distribuir según lado del refri o de la estufa) | Cajones profundos + divisores |
+| Repisas ala **A** ×3 | Display vajilla / decoración | Repisas ~55–65 cm |
+| Cajones ala **B** #1–3 | Utensilios, aceites/especias diarias, tablas y textiles | Cajones con insertos |
+| Repisas ala **B** ×3 | Servir, libros de cocina, tazas | Repisas ~55–65 cm |
 
 #### ZONA 2 — PREPARACIÓN (Isla — lado interior, opuesto a bancos)
 
@@ -154,13 +161,13 @@ Perímetro del triángulo cocina: **ajustar con arquitecto** cuando quede fija l
 | Gabinete Muro C #2 | Cristalería (copas de vino, vasos, copas champagne) | Entrepaños ajustables |
 | Gabinete Muro C #3 (cajones) | Mantelería: manteles individuales, servilletas de tela, caminos de mesa | Cajones poco profundos |
 
-#### ZONA 4 — DESPENSA SECA + FRÍO (frío fuera de Muro C)
+#### ZONA 4 — DESPENSA SECA + CAVA (frío principal en Muro B)
 
 | Ubicación | Contenido | Tipo de almacenamiento |
 |-----------|-----------|----------------------|
-| **Refrigerador** (ubicación TBD) | Lácteos, carnes, verduras, etc. | Según equipo elegido |
-| **Cava** (ubicación TBD) | Vinos por temperatura | Columna, bajo cubierta o pie |
-| Gabinete bajo Muro C (si aplica) o alacena | **Despensa seca**: pastas, arroz, granos, harinas, azúcar en contenedores herméticos (OXO Pop) | Entrepaños + contenedores |
+| **Refrigerador** | **Sub-Zero** French 49" en **Muro B** | Interior equipo |
+| **Cava** (ubicación TBD) | Vinos por temperatura | Columna, bajo cubierta en bar, o pie |
+| Gabinete bajo Muro C o alacena | **Despensa seca**: pastas, arroz, granos, harinas, azúcar (OXO Pop) | Entrepaños + contenedores |
 | Gabinete / entrepaño adyacente | Enlatados, conservas, miel, mermeladas, cereales | Entrepaños ajustables |
 | Cerca de estación de café | Café en grano, tés, cápsulas, endulzantes | Cajón o tarro |
 
@@ -223,7 +230,7 @@ Perímetro del triángulo cocina: **ajustar con arquitecto** cuando quede fija l
 ### Hidráulica (Plomería)
 - Toma de agua fría + caliente + desagüe para **tarja farmhouse en Muro C** (muro de carga — típicamente más simple que isla)
 - Toma de agua para lavavajillas (mismo módulo Muro C, junto a tarja)
-- Toma de agua para **refrigerador** (si el modelo elegido lleva dispensador / hielos — según ubicación final)
+- Toma de agua para **Sub-Zero** en **Muro B** (si el modelo lleva dispensador / hielos)
 - Toma de agua para máquina de café (opcional — línea directa)
 
 ### Gas LP
@@ -233,7 +240,7 @@ Perímetro del triángulo cocina: **ajustar con arquitecto** cuando quede fija l
 
 ### Eléctrica
 - Circuito dedicado 240V/30A para estufa Wolf (horno eléctrico del Dual Fuel)
-- Circuito dedicado 120V/20A para **refrigerador** (donde se instale)
+- Circuito dedicado 120V/20A para **Sub-Zero** (Muro B; ver manual si el modelo exige circuito dedicado mayor)
 - Circuito dedicado 120V/20A para lavavajillas Miele (Muro C)
 - Circuito dedicado 120V/20A para **cava de vinos** (si aplica en su ubicación)
 - 2 contactos dobles para estación de café (detrás, ocultos)
@@ -249,14 +256,15 @@ Perímetro del triángulo cocina: **ajustar con arquitecto** cuando quede fija l
 
 | Rubro | Precio Estimado MXN |
 |-------|-------------------|
-| Gabinetes perimetrales Muro B + C (roble blanqueado, Blum, herrajes hierro) | $170,000–258,000 |
+| Gabinetes perimetrales Muro B (5.0 m) + Muro C (roble, Blum, herrajes hierro) | $195,000–295,000 |
 | Isla (estructura roble + waterfall Crema Marfil 8cm) | $230,000–360,000 |
-| Repisas flotantes con LED (×9) | $54,000–81,000 |
+| Repisas flotantes con LED (Muro B ×6 + Muro C ×3) | $56,000–85,000 |
 | Campana custom estuco + extractor interno | $70,000–120,000 |
-| Salpicadera mármol losa completa | $35,000–55,000 |
-| Cubiertas mármol perimetrales | $40,000–65,000 |
+| Salpicadera / paneles traseros (Muro B refri + cocción) | $42,000–68,000 |
+| Cubiertas mármol perimetrales (incl. Muro B ~5.0 m) | $48,000–78,000 |
 | **Electrodomésticos** | |
 | — Wolf 48" Dual Fuel | $180,000–220,000 |
+| — Sub-Zero French door 49" (Muro B) | $400,000–650,000 |
 | — Miele Lavavajillas integrado (Muro C) | $42,000–55,000 |
 | — Wolf cajón microondas (opcional) | $28,000–38,000 |
 | — Espresso + molino | $17,000–33,000 |
@@ -275,8 +283,8 @@ Perímetro del triángulo cocina: **ajustar con arquitecto** cuando quede fija l
 
 | | MXN | USD |
 |--|-----|-----|
-| **Rango** | **$1,540,000 – $2,480,000** | **$88,000 – $142,000** |
-| **Punto medio recomendado** | **~$2,010,000** | **~$115,000** |
+| **Rango** | **$2,035,000 – $3,195,000** | **$116,000 – $182,000** |
+| **Punto medio recomendado** | **~$2,615,000** | **~$149,000** |
 
 ---
 
@@ -311,10 +319,10 @@ Perímetro del triángulo cocina: **ajustar con arquitecto** cuando quede fija l
 | Campana de estuco | Albañil + estucador — construida in situ sobre estructura metálica | Coordinar con proveedor de extractor para dimensiones |
 | Herrería (herrajes iron) | Talleres de **Tonalá** o **San Miguel de Allende** | Muestras de bin-pulls en negro mate forjado |
 | Tarja + grifería | **Kohler** / **Blanco** distribuidores CDMX; grifería **Brizo** / **Delta** | Confirmar medida de vano con tarja elegida |
-| Electrodomésticos Wolf + Miele | **Sub-Zero & Wolf México** (Wolf) + **Miele** Centro / distribuidor | Refri/cava: definir marca según ubicación fuera de Muro C |
+| Electrodomésticos Wolf + Sub-Zero + Miele | **Sub-Zero & Wolf México** — integración **French 49"** + **Wolf 48"** en **Muro B**; **Miele** lavavajillas | Cava: línea aparte |
 | Pendientes cerámica | **Nouvel Studio** (CDMX) o **Entler Studio** (importación) | Pedir muestras de forma y tamaño |
 | Bancos artesanales | Carpintero de fresno/encino + artesano de palma (Michoacán) | Prototipo antes de producir los 5 |
 
 ---
 
-*Última actualización: 20 de marzo de 2026 — Muro C: tarja farmhouse moderna + lavavajillas; sin columnas de frío en cocina.*
+*Última actualización: 20 de marzo de 2026 — **Muro B 5.0 m:** Sub-Zero French 49" + Wolf 48" + alas de repisas/gabinetes. **Muro C:** tarja farmhouse + lavavajillas.*
